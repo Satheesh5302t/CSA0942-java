@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class SquareCubeCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a decimal number: ");
+        double number = scanner.nextDouble();
+
+        double square = Math.pow(number, 2); // Calculate the square using Math.pow() method
+        double cube = Math.pow(number, 3);   // Calculate the cube using Math.pow() method
+
+        System.out.println("Square of the number: " + square);
+        System.out.println("Cube of the number: " + cube);
+
+        scanner.close();
+    }
+}
